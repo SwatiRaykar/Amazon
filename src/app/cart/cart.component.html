@@ -1,0 +1,51 @@
+
+  
+  <div id="title">
+    <h2>Shopping Cart</h2>
+  </div>
+  <hr>
+    <div *ngIf="cartItems.length === 0">
+      <p id="emptycart">Your Amazon cart is empty. <br>
+      or Check server connection </p>
+    </div>
+  <div *ngIf="cartItems.length > 0">
+    <div *ngFor="let item of cartItems">
+  <div class="products"   >
+    <div class="product-details"  >
+      <div id="productImage">
+        <img
+          [src]="item.imageURL"
+          alt="{{ item.name }}"
+          class="product-image"
+        />
+      </div>
+      <div id="productInfo">
+        <h2>{{ item.name }}</h2>
+        <div id="ratingStars">
+          <img src="https://static.vecteezy.com/system/resources/previews/017/178/285/original/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.png" alt="">
+          <p>{{item.nOofRatings}}</p>
+        </div>
+  
+          <p  id="totalBuyers">{{item.totalBuyCustomers}}0+ bought in past month</p>
+        <!-- <p id="description">{{ product.description }}</p> -->
+        <p id="price">Price: <b> {{ item.price | currency:'INR':'symbol':'1.2-2' }} </b> M.R.P: <del> {{item.marketPrice}}</del></p>
+        <p>FREE delivery <br>Service:Installation
+        </p>
+        <p id="cartQuantity">Quantity: <b> {{item.quantity}}</b></p>
+        <p id="cartQuantity">Total Price: <b> {{item.totalPrice | currency:'INR':'symbol':'1.2-2' }}</b></p>
+        
+        
+        <button (click)="buyNow(item)">Buy Now</button>
+        
+        <button (click)="removeProduct(item.id)">Remove from Cart</button>
+        <!-- <button (click)="BuyNow()">Buy Now</button> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+   <div>
+      <!-- <h2>Total Value: {{ totalValue | currency }}</h2> -->
+    </div>
+
+ 

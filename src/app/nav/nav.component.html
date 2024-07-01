@@ -1,0 +1,112 @@
+
+
+  <nav >
+    <ul >
+      <li [routerLinkActive]="'active'" [routerLink]="'home'"> <img  [routerLink]="['/products']"
+              src="https://clipartcraft.com/images/amazon-logo-transparent-white-letter-2.png"
+              alt="Logo not found"
+            /><span id="dotin">.in</span>
+          </li>
+          
+          <li class="hideOnMobile" id="location" [routerLinkActive]="'active'">
+            <h5>Delivery location<img src="https://www.pngkey.com/png/full/235-2350342_location-white-location-icon-with-transparent-background.png" alt=""></h5>
+          </li>
+          <li class="hideOnMobile"  id="Search">
+            <input type="text" placeholder="Search Amazon.in" >
+            <button type="submit"><span><i class=" fa fa-search "></i></span></button>
+          </li>
+
+        <li class="hideOnMobile" id="language" [routerLinkActive]="'active'">
+          <a href="#">English<i class="fa fa-sort-desc" aria-hidden="true">         
+             <img src="https://icons.iconarchive.com/icons/wikipedia/flags/1024/IN-India-Flag-icon.png" alt="">
+          </i></a>
+        </li>
+
+        <li class="hideOnMobile" id="accList" [routerLinkActive]="'active'">
+          <!-- <h6 >signin <p>Welcome, {{ userName }}</p></h6> -->
+          <ng-container *ngIf="userName; else signIn">
+            <h6>Welcome, {{ userName }}</h6>
+          </ng-container>
+          <ng-template #signIn>
+            <h6>Sign In</h6>
+          </ng-template>
+          <a href="#">
+          Account&Lists<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+          
+          <div class="dropdown-content" id="pb">
+            <div class="dropdown-content2"><button [routerLinkActive]="'active'" [routerLink]="'login'">Sign in</button>
+             
+            <p>New customer?<a href="#" [routerLinkActive]="'active'" [routerLink]="'sign-up'">Start here.</a></p>
+          </div><hr>
+          <div class="dropdown-content2" id="dropdown-content3">
+            <div class="flist">
+              <h3>Your Lists</h3> 
+              <ul>
+                <li>Create a wish list</li>
+                <li>Wish from any Website</li>
+                <li>Baby Wishlist</li>
+                <li>Discover Your Style</li>
+                <li>Explore Showroom</li>
+              </ul>
+            </div>
+            <div class="slist">
+              <h3>Your Account</h3>
+              <ul>
+                <li>Your Account</li>
+                <li>Your Orders</li>
+                <li>Your Wishlist</li>
+                <li>Your Recommendations</li>
+                <li>Your Prime Membership</li>
+                <li>Your Prime Video</li>
+                <li>Your Subscribe and Save Items</li>
+                <li>Memberships and Subscriptions</li>
+                <li>Your Seller Account</li>
+                <li>Manage Your Content and Device</li>
+                <li>Your Free Business Account</li>
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </li>
+
+        <li class="hideOnMobile" id="RtrnOrders" [routerLinkActive]="'active'"><h6>Returns &</h6>
+          <a href="#">
+          Orders<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+        </li>
+
+        <li class="hideOnMobile" id="acart" [routerLinkActive]="'active'">
+          <a [routerLink]="['cart']" (click)="navigateToCart()">Cart({{ cartCount }})<img src="https://icon-library.com/images/white-shopping-cart-icon/white-shopping-cart-icon-9.jpg" alt=""></a>
+        </li>
+      </ul>
+      <!-- <li [routerLinkActive]="'active'"><a [routerLink]="'contact-us'">CONTACT</a></li> -->
+      <!-- <button  type="button" id="loginBtn" *ngIf="!isLoggedIn" (click)="navigateToLogin()" >LOGIN</button> --> 
+  </nav>
+
+ <!-- Navigation2 -->
+
+ <div class="navigation2">
+    <ul class="nav2">
+    <li>All</li>
+    <li>Fresh<i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+    <li>Amazon miniTV </li>
+    <li>Sell</li>
+    <li>Best Sellers</li>
+    <li>Today's Deals</li>
+    <li>Mobiles</li>
+    <li>Fashion</li>
+    <li>Electronics</li>
+    <li>Prime<i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+    <li>New Releases</li>
+    <li> Home & Kitchen</li>
+    <li>Amezon Pay</li>
+  </ul>
+</div>
+  <!-- Navigation2 End -->
+
+
+
+
+<!-- <div ><br>
+  <app-login (WelcomeUser)="OnAddedUsername($event)" (CustomerId)="OnSendUserId($event)" (ClosedLogin)="OnCloseLogin($event)" class="LPopup" id="logPopup"  [ngClass]="{openloginpopup:isclicked===true}"  ></app-login>
+</div>   -->
+    

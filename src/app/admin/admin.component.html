@@ -1,0 +1,55 @@
+
+  <div class="admin-layout">
+    <nav class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a routerLink="/admin/dashboard">Dashboard</a></li>
+
+            <li><a  [routerLink]="['/admin/products']" (click)="navigateToProducts()">Products
+            <!-- <li><a routerLink="/admin/products"  (click)="navigateToProducts()">Products -->
+              <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </a>
+              <div class="dropdown-content" >
+                <ul>
+                  <li [routerLinkActive]="'active'" [routerLink]="['products']" (click)="navigateToProducts()">Show All Products</li>
+                  <li [routerLinkActive]="'active'" [routerLink]="['products/add-Product']">Add new Product</li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li><a routerLink="/admin/customers" (click)="navigateToCustomers()">Customers
+              <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            <div class="dropdown-content" >
+              <ul>
+                <li [routerLinkActive]="'active'" [routerLink]="['customers']" (click)="navigateToCustomers()">View all users</li>
+                <li>Block the user</li>
+              </ul>
+            </div>
+          </li>
+
+            <li><a routerLink="/admin/orders" (click)="navigateToOrders()">Orders
+              <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+              <div class="dropdown-content" >
+                <ul>
+                  <li  [routerLinkActive]="'active'" [routerLink]="['orders']" (click)="navigateToOrders()">Show All orders</li>
+                  <!-- <li>Add new Product</li> -->
+                </ul>
+              </div>
+            </li>
+
+
+           
+
+
+            <li><a routerLink="/admin/settings">Settings
+              <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+    </nav>
+    <div class="admin-content">
+        <router-outlet></router-outlet>
+      </div>
+</div>
+  

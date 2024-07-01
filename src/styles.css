@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&family=Baloo+Bhaijaan+2&family=Baloo+Bhaina+2&family=Baloo+Chettan+2&family=Merienda+One&family=Leckerli+One&family=Kaushan+Script&family=Boogaloo&family=Bungee+Shade&family=Hubballi&family=Jacques+Francois+Shadow&family=League+Gothic&family=Londrina+Shadow&family=Syne+Monofamily=Roboto:400,500,600,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+/* :root{
+    --navbar-height:59px;
+
+} */
+.active{
+    color: aquamarine;
+    text-decoration:underline rgb(77, 97, 232);
+    /* background-color: rgb(183, 111, 164); */
+    border-radius: 10px;
+}

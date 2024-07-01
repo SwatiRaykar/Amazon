@@ -1,0 +1,43 @@
+<div class="maindiv">
+    <div class="amazonlogo">
+      <img src="https://logospng.org/download/amazon/logo-amazon-1536.png" alt="">
+    </div>
+
+<div class="subdiv">
+    <h2>Add New Product</h2>
+    <form action="#" method="post" [formGroup]="AddProductForm">
+
+        <div class="form-group"  [class.error]="AddProductForm.controls['Name'].dirty && AddProductForm.hasError('required','Product Name')">
+            <input formControlName="Name" type="text" name="Name" placeholder="Name" />
+          </div>
+          <small *ngIf="AddProductForm.controls['Name'].dirty && AddProductForm.hasError('required','Name')" style="color: red;">*Name is required</small>
+      
+      
+          <div class="form-group"  [class.error]="AddProductForm.controls['Price'].dirty && AddProductForm.hasError('required','Price')">
+            <input formControlName="Price" type="number" name="Price" placeholder="Price" />
+          </div>
+          <small *ngIf="AddProductForm.controls['Price'].dirty && AddProductForm.hasError('required','Price')" style="color: red;">*Price is required</small>
+      
+          <div class="form-group"  [class.error]="AddProductForm.controls['marketPrice'].dirty && AddProductForm.hasError('required','marketPrice')">
+            <input formControlName="marketPrice" type="number" name="Name" placeholder="Market Price" />
+          </div>
+          <small *ngIf="AddProductForm.controls['marketPrice'].dirty && AddProductForm.hasError('required','marketPrice')" style="color: red;">*Market Price is required</small>
+          
+          <div class="form-group"  [class.error]="AddProductForm.controls['imageURL'].dirty && AddProductForm.hasError('required','imageURL')">
+            <input formControlName="imageURL" type="text" name="imageURL" placeholder="Image URL" />
+          </div>
+          <small *ngIf="AddProductForm.controls['imageURL'].dirty && AddProductForm.hasError('required','imageURL')" style="color: red;">*Image URL is required</small>
+          
+          
+          <button  (click)="onAddProduct()" type="submit" class="bttn">Add Product</button>
+    </form>
+  </div>
+
+  <div class="bottomdiv">
+    <a href="">Conditions of Use</a>
+    <a href="">Privacy Notice</a>
+    <a href="">Help</a>
+  <p> © 1996-2024, Amazon.com, Inc. or its affiliates </p>
+  </div>
+  </div>
+  

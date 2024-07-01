@@ -1,0 +1,38 @@
+    <div class="maindiv">
+      <div class="amazonlogo">
+        <img src="https://logospng.org/download/amazon/logo-amazon-1536.png" alt="">
+      </div>
+      <div class="subdiv">
+    
+      
+      <h2>Password assistance</h2>
+      <p>Enter the email address associated with your Amazon account.</p>
+      
+      
+      <form [formGroup]="ForgotPWDForm" >
+  
+        <div class="form-group" [class.error]="ForgotPWDForm.controls['EmailId'].dirty && ForgotPWDForm.hasError('required','EmailId')">
+          <span class="fa fa-envelope fa-x"></span>
+           <input formControlName="EmailId" type="email" name="EmailId"  placeholder="Email Id">
+          </div>
+         <small *ngIf="ForgotPWDForm.controls['EmailId'].dirty && ForgotPWDForm.hasError('required','EmailId')" style="color: red;">*Usename is required</small>
+      
+         <button [disabled]="ForgotPWDForm.invalid" class="bttn" (click)="onForgotPWD()" type="submit" >Continue</button>
+    </form>
+     
+    
+    <hr/>
+    <h4>Has your email address or mobile phone number changed?</h4>
+    <p>If you no longer use the e-mail address associated with your Amazon account, you may contact <a href="#">Customer Service</a> for help restoring access to your account.</p>
+    </div>
+
+    <div class="bottomdiv">
+      <a href="">Conditions of Use</a>
+      <a href="">Privacy Notice</a>
+      <a href="">Help</a>
+    <p> © 1996-2024, Amazon.com, Inc. or its affiliates </p>
+    </div>
+    </div>
+     
+ 
+  

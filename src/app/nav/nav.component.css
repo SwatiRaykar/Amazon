@@ -1,0 +1,235 @@
+.home{
+  margin-top: 0px;
+}
+nav{
+  background-color: rgb(9, 10, 10);
+  color: black;
+  height: 10vh;
+  z-index: 6;
+  position: sticky;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(9, 10, 10);
+  position: fixed;
+}
+nav li{
+margin: 2px;
+margin-top: 10px;
+height: 50px;
+padding: 5x;
+cursor: pointer;
+/* border: 1px white solid; */
+}
+#Search>input {
+width: 300px;
+margin-top: -10;
+padding: 5px;
+}
+#Search>input:active {
+border:2px orange solid ;
+}
+#Search {
+display: flex;
+}
+#Search button{
+border:2px orange solid ;
+background-color: rgb(243, 193, 101);
+}
+#Search button span{
+margin:10px ;
+font-size: 20px;
+}
+#language a i img{
+height: 20px;
+width: 20px;
+display: block;
+margin-left: -80px;
+margin-top: -17px;
+}
+#language i{
+margin-top: 0px;
+  }
+
+#location img{
+margin-top: 25px;
+margin-left: -120px;
+height: 20px;
+color: white;
+}
+#location h5{
+height: 20px;
+  color: white;
+  margin-left: -100px;
+  margin-top: -20px;
+}
+
+#acart img{
+  height: 25px;
+margin-left: 0px;
+margin-top: 10px;
+}
+
+nav li h6{
+color: white;
+font-size: 13px;
+margin-top: 0px;
+margin-left: 30px;
+}
+#accList {
+margin-left: -10px;
+
+}
+#accList a{
+display: inline-block; 
+margin-top:0px;
+/* margin-left: -30px; */
+}
+#RtrnOrders a{
+display: inline-block; 
+margin-top:-3px;
+}
+#RtrnOrders a i {
+display: inline;
+}
+
+#accList a i{
+display: inline;
+}
+nav li i{
+margin-top: -5px;
+margin-left: 5px;
+}
+nav li img{ /* Amazonlogo */
+/* margin-top: -39px; */
+/* margin-left: -39px; */
+height: 50px;
+
+}
+nav li #dotin{
+color: white;
+font-size: 16px;
+position: absolute;
+display: flex;
+flex-direction: row;
+margin-top: -41px;
+margin-left: 129px;
+z-index: 5;
+}
+nav a{
+height: 100%;
+padding: 0 30px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: rgb(247, 242, 242);
+}
+nav li:hover{
+border: 1px white solid;
+
+}
+nav li:first-child{
+margin-right: auto;
+}
+#sgn{
+margin-top: 24px;
+padding-left: -10px;
+}
+/* dropdown */
+.dropdown-content  {
+  /* margin-left: -50vw; */
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 50vw;
+height: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  overflow: hidden;
+}
+
+.dropdown-content ul{
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #f1f1f1;
+}
+li:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+#pb{
+  margin-left: -10vw;
+}
+.dropdown-content2 {
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ /* background-color: #f1f1f1; */
+}
+.dropdown-content2 p{
+  font-size: 14px;
+}
+.dropdown-content2 a{
+color: #0377fd;
+font-size: 13px;
+}
+.dropdown-content2 button{
+  background-color: rgb(243, 216, 10);
+  margin-top: 20px;
+  border-radius:10px;
+  padding: 10px 100px;
+}
+#dropdown-content3{
+  display: flex;
+flex-direction: row;
+/* height: 200px; */
+/* width: 100px; */
+overflow: hidden;
+}
+#dropdown-content3 ul li{
+ height: 22px; 
+ /* margin-left: 200px; */
+}
+#dropdown-content3 .slist{
+  margin-left: 100px;
+}
+.flist{
+  margin-left:-200px;
+
+}
+
+
+
+/* Navigation2 style */
+.nav2{
+background-color: #232f3e;
+}
+.nav2 li:first-child{
+margin-right:0;
+}
+.nav2 {
+display: flex;
+flex-direction:row;
+list-style: none;
+margin: 0px;
+padding-top: 0px;
+height: 30px;
+}
+.nav2  li{
+margin:11px;
+color: white;
+cursor: default;
+}
+.nav2  li i{
+margin-top: -7px;
+margin-left: 5px;
+}
+
+

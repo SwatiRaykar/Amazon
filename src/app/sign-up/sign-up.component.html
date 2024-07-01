@@ -1,0 +1,59 @@
+<div class="maindiv">
+  <div class="amazonlogo">
+    <img src="https://logospng.org/download/amazon/logo-amazon-1536.png" alt="">
+  </div>
+  <div class="subdiv">
+
+  
+  <h2>Create Account</h2>
+  <p>Already a Customer?  <a href="#" [routerLinkActive]="'active'" [routerLink]="['login']" (click)="goToSignIn()">Sign in</a></p>
+  
+  
+  <form action="#" method="post" [formGroup]="signUpForm">
+
+
+    <div class="form-group" [class.error]="signUpForm.controls['PhoneNo'].dirty && signUpForm.hasError('required','PhoneNo')" >
+      <span class="fa fa-phone fa-x"></span>
+      <input formControlName="PhoneNo" type="number" name="Phone Number" placeholder="Phone number" />
+    </div>
+    <small *ngIf="signUpForm.controls['PhoneNo'].dirty && signUpForm.hasError('required','PhoneNo')" style="color: red;">*Phone Number is required</small>
+
+
+    <!-- <label for="name">Name:</label> -->
+    <div class="form-group"  [class.error]="signUpForm.controls['Name'].dirty && signUpForm.hasError('required','FirstName')">
+      <span class="fa fa-user fa-x"></span>
+      <input formControlName="Name" type="text" name="Name" placeholder="Name" />
+    </div>
+    <small *ngIf="signUpForm.controls['Name'].dirty && signUpForm.hasError('required','Name')" style="color: red;">*Name is required</small>
+
+
+    <div class="form-group"  [class.error]="signUpForm.controls['Email'].dirty && signUpForm.hasError('required','Email')">
+      <span class="fa fa-envelope fa-x"></span>
+      <input formControlName="Email" type="email" name="Email" placeholder="eg.abc@gmail.com" />
+    </div>
+    <small *ngIf="signUpForm.controls['Email'].dirty && signUpForm.hasError('required','Email')" style="color: red;">*Email Id is required</small>
+
+
+    <div class="form-group"  [class.error]="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')">
+      <span class="fa fa-lock fa-1x"></span> 
+        <input formControlName="password" [type]="[passType]" name="Password" placeholder="password">
+    </div>
+    <i>(Passwords must be at least 6 characters.)</i>
+    <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')" style="color: red;">*Password is required</small>
+    <span class="fa {{eyeIcon}} eyeIcon" (click)="hideShowPass()"></span> 
+      
+    <p>To verify your number, we will send you a text message with a temporary code. Message and data rates may apply.</p>
+  
+    <button  (click)="onSignup()" type="submit" class="bttn">SignUp</button>
+  </form>
+<hr/>
+<p>By creating an account or logging in, you agree to Amazon’s <a href="#">Conditions of Use </a> an<a href=""> Privacy Policy.</a></p>
+</div>
+
+<div class="bottomdiv">
+  <a href="">Conditions of Use</a>
+  <a href="">Privacy Notice</a>
+  <a href="">Help</a>
+<p> © 1996-2024, Amazon.com, Inc. or its affiliates </p>
+</div>
+</div>

@@ -1,0 +1,43 @@
+
+<div id="title">
+    <h2>Products</h2>
+  </div>
+<hr>
+<div *ngIf="products.length === 0">
+      <p id="empty">No Products. <br>
+      or Check server connection </p>
+    </div>
+<div *ngIf="products.length > 0" class="scrollable-container">
+  
+<div *ngFor="let product of products">
+  <div >
+<div class="products"   >
+  <div class="product-details"  >
+    <div id="productImage">
+      <img
+        [src]="product.imageURL"
+        alt="{{ product.name }}"
+        class="product-image"
+      />
+    </div>
+    <div id="productInfo">
+      <h2>{{ product.name }}</h2>
+      <div id="ratingStars">
+        <img src="https://static.vecteezy.com/system/resources/previews/017/178/285/original/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.png" alt="">
+        <p>{{product.nOofRatings}}</p>
+      </div>
+
+        <p  id="totalBuyers">{{product.totalBuyCustomers}}0+ bought in past month</p>
+
+        <p id="price">Price: <b> RS.{{ product.price  }} </b> M.R.P: <del> {{product.marketPrice}}</del></p>
+      <!-- <p id="price">Price: <b> {{ product.price | currency:'INR':'symbol':'1.2-2' }} </b> M.R.P: <del> {{product.marketPrice}}</del></p> -->
+      <p>FREE delivery <br>Service:Installation
+      </p>
+      <button (click)="removeProduct(product.id)">Delete</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+

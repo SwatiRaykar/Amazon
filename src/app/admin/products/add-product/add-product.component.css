@@ -1,0 +1,88 @@
+/* **************SignUp********************* */
+/* signUp style */
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-top: -40px;
+  margin-left: -200px;
+  }
+  .amazonlogo img{
+    height: 150px;
+  }
+   .subdiv{
+    border: black 1px solid;
+    height: 320px;
+    width: 400px;
+    display: flex;
+    margin-top: -40px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+   }
+  i{
+    font-size: 13px;
+  }   
+  p{
+    font-size: 14px;
+    margin-top: 7px;
+  }
+   small{
+      margin-left: 0px;
+    }
+    a{
+      text-decoration: none;
+      color: rgb(5, 107, 241);
+    }
+  .bttn{
+     display: block;
+      width: 240px;
+      height: 40px;
+      margin:20px auto;
+      font-size: 15px;
+      background-color:rgb(229, 199, 5) ;;
+      font-family:Arial, Helvetica, sans-serif;
+      border:rgb(229, 199, 5) ridge 1px;
+      border-radius: 20px;
+      color: rgb(12, 12, 12);
+  }
+  .form-group {
+      position: relative;
+      font-size:20px;
+      -webkit-text-stroke:0.5px rgb(13, 14, 14) ;
+  }
+  .form-group input{
+      /* position: relative; */
+      width: 350px;
+      margin: 8px auto;
+      /* text-align: center; */
+      cursor:text;
+      font-size: 15px;
+      padding: 5px;
+      padding-left: 33px;
+      border: #000 1px ridge;
+      color: rgb(1, 1, 1);
+      border-radius: 8px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #fdf8f8;
+  }
+  input[type='email'],input[type='password']{
+      border: none;
+      outline: none;
+      box-shadow: none;
+      width: 100%;
+    }
+     .bottomdiv {
+      margin-top: 20px;
+    }
+  .bottomdiv a{
+    padding: 10px;
+    font-size: 12px; 
+  }
+  .bottomdiv p{
+    padding: 10px;
+    font-size: 12px;
+  }
+  

@@ -1,0 +1,38 @@
+<div class="maindiv">
+    <div class="amazonlogo">
+      <img src="https://logospng.org/download/amazon/logo-amazon-1536.png" alt="">
+    </div>
+    <div class="subdiv">
+  
+    
+    <h2>Verification required</h2>
+    <p>To continue, complete this verification step. We've sent an OTP to the email. Please enter it below to complete verification.</p>
+    
+    
+    <form [formGroup]="ForgotPWDForm" >
+
+      <div class="form-group" [class.error]="ForgotPWDForm.controls['EmailId'].dirty && ForgotPWDForm.hasError('required','EmailId')">
+        <span class="fa fa-envelope fa-x"></span>
+         <input formControlName="EmailId" type="email" name="EmailId"  placeholder=" Enter OTP">
+        </div>
+       <small *ngIf="ForgotPWDForm.controls['EmailId'].dirty && ForgotPWDForm.hasError('required','EmailId')" style="color: red;">*Usename is required</small>
+    
+       <button [disabled]="ForgotPWDForm.invalid" class="bttn" (click)="onForgotPWD()" type="submit" [routerLinkActive]="'active'" [routerLink]="['email-varify']">Continue</button>
+  </form>
+   
+  
+  <hr/>
+  <h4><a>Resent OTP.</a></h4>
+  <p>I need more help.</p>
+  </div>
+
+  <div class="bottomdiv">
+    <a href="">Conditions of Use</a>
+    <a href="">Privacy Notice</a>
+    <a href="">Help</a>
+  <p> © 1996-2024, Amazon.com, Inc. or its affiliates </p>
+  </div>
+  </div>
+   
+
+
