@@ -1,0 +1,5 @@
+C:\Users\Swati\source\repos\Amazon\AmazonDAL\obj\Debug\net6.0\AmazonDAL.csproj.AssemblyReference.cache
+C:\Users\Swati\source\repos\Amazon\AmazonDAL\obj\Debug\net6.0\AmazonDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Swati\source\repos\Amazon\AmazonDAL\obj\Debug\net6.0\AmazonDAL.AssemblyInfoInputs.cache
+C:\Users\Swati\source\repos\Amazon\AmazonDAL\obj\Debug\net6.0\AmazonDAL.AssemblyInfo.cs
+C:\Users\Swati\source\repos\Amazon\AmazonDAL\obj\Debug\net6.0\AmazonDAL.csproj.CoreCompileInputs.cache
